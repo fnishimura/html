@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <title>TAKAOSAN</title>
 
 </head>
-<body>
-    <header>
-        <h1><img src="assets/img/logo.svg" alt="ロゴ"></h1>
 
+<body>
+    <div class="wrapper">
+    <header>
+        <h1><img src="assets/img/logo.svg" alt="TAKAOSANのロゴ"></h1>
         <div id="main-visual">
-            <img src="assets/img/mainimage1.png" alt="メインビジュアル">
-            <img src="assets/img/catchcopy.png" alt="キャッチコピー">
+            <img class=main-picture src="assets/img/mainimage1.png" alt="山から見下ろす人">
+            <img class="catchcopy" src="assets/img/catchcopy.png" alt="WORKHARD,PLAYHARD">
         </div>
 
         <nav id="global-nav">
@@ -31,7 +32,8 @@
     </header>
 
     <main>
-            <section class="NEWS-area">
+            <!-- news-area -->
+            <section class="news-area">
                 <h2>NEWS</h2>
                 <ul>
                     <li>
@@ -53,92 +55,146 @@
                 </ul>
             </section>
 
-            <section class="FEATURES-area">
+            <!-- features-area -->
+            <section class="features-area">
                 <h2>FEATURES</h2>
-                <div class="FEATURES-contents">
+                <div class="features-contents">
                     <img src="assets/img/features-image.jpg" alt="featuresの画像">
-                    <div class="FEATURES-text">
+                    <div class="features-text">
                         <h3>アウトドアシーンを想定された防水性</h3>
-                        <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。
-                        また、一番人気といわれる「Aero888」をはじめとしたバックパックでは、表生地に"バリスティックナイロン"という強度のある撥水ナイロンを使用し、裏地にもハイパロンという耐性ゴムを使用。表と裏のWの防水で、アウトドアシーンや普段の急な雨でも安心です。</p>
+                        <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。<br>
+                        <br>また、一番人気といわれる「Aero888」をはじめとしたバックパックでは、表生地に"バリスティックナイロン"という強度のある撥水ナイロンを使用し、裏地にもハイパロンという耐性ゴムを使用。表と裏のWの防水で、アウトドアシーンや普段の急な雨でも安心です。</p>
                     </div>
                 </div>
             </section>
 
-            <section class="SUBSCRIPTION-area">
+            <!-- subscription-area -->
+            <section class="subscription-area">
                 <h2>SUBSCRIPTION</h2>
-                <div class="SUBSCRIPTION-contents">
-                    <div class="SUBSCRIPTION-text">
-                        <p>TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
-                    </div>
-                    <div class="SUBSCRIPTION-flow">
+                <div class="subscription-contents">
+                    <p class="subscription-text">
+                    TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
+                    <div class="subscription-pack">
                         <ul>
                             <li>
                                 <a href="">
                                     <figure>
-                                        <img src="assets/img/subscription-starter-image.jpg" alt="スターター">
-                                        <figcaption>
-                                            Starter<br>
-                                            ¥2,400/m
-                                            <span>気軽に始められるスタータープラン</span>
-                                            <p>詳しくはこちら</p>
+                                        <img src="assets/img/subscription-starter-image.jpg" alt="スターターパック">
+                                            <figcaption>
+                                            <h4>
+                                            Starter
+                                            </h4>
+                                            <p class="pack-price">
+                                            ¥<span>2,400</span>/m
+                                            </p>
+                                            <p class="pack-text">
+                                            気軽に始められるスターターパック
+                                            </p>
+                                            <div class="more">
+                                            詳しくはこちら
+                                            </div>
                                         </figcaption>
                                     </figure>
                                 </a>
                             </li>
                             <li>
-                                    <a href="">
-                                        <figure>
-                                            <img src="assets/img/subscription-standard-image.jpg" alt="スタンダード">
+                                <a href="">
+                                    <figure>
+                                        <img src="assets/img/subscription-standard-image.jpg" alt="スタンダードパック">
                                             <figcaption>
-                                                Standard<br>
-                                                ¥7,800/m
-                                                <span>当店オススメのスタンダードパック</span>
-                                                <p>詳しくはこちら</p>
+                                            <h4>
+                                            Standard
+                                            </h4>
+                                            <p class="pack-price">
+                                            ¥<span>7,800</span>/m
+                                            </p>
+                                            <p class="pack-text">
+                                            当店オススメのスタンダードパック
+                                            </p>
+                                            <div class="more">
+                                            詳しくはこちら
+                                            </div>
                                             </figcaption>
-                                        </figure>
-                                    </a>
-                                </li>
-                                <li>
-                                        <a href="">
-                                            <figure>
-                                                <img src="assets/img/subscription-master-image.jpg" alt="マスター">
-                                                <figcaption>
-                                                    Master<br>
-                                                    ¥16,400/m
-                                                    <span>気軽に始められるスタータープラン</span>
-                                                    <p>詳しくはこちら</p>
-                                                </figcaption>
-                                            </figure>
-                                        </a>
-                                    </li>
-            
+                                    </figure>
+                                </a>
+                             </li>
+                            <li>
+                                <a href="">                                           
+                                    <figure>
+                                        <img src="assets/img/subscription-master-image.jpg" alt="マスターパック">
+                                            <figcaption>
+                                            <h4>
+                                            Mastar
+                                            </h4>
+                                            <p class="pack-price">
+                                            ¥<span>164,400</span>/m
+                                            </p>
+                                            <p class="pack-text">
+                                            当店オススメのスタンダードパック
+                                            </p>
+                                            <div class="more">
+                                            詳しくはこちら
+                                            </div>
+                                            </figcaption>
+                                    </figure>
+                                 </a>
+                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="ITEMS-area">
+            <!-- items-area -->
+            <section class="items-area">
                 <h2>ITEMS</h2>
-                <img src="assets/img/items-image01.png" alt="">
-                <img src="assets/img/items-image02.png" alt="">
-                <img src="assets/img/items-image03.png" alt="">
-                <img src="assets/img/items-image04.png" alt="">
-                <img src="assets/img/items-image05.png" alt="">
-                <img src="assets/img/items-image06.png" alt="">
-                <img src="assets/img/items-image07.png" alt="">
-                <img src="assets/img/items-image08.png" alt="">
-                <img src="assets/img/items-image09.png" alt="">
-                <img src="assets/img/items-image10.png" alt="">
-                <img src="assets/img/items-image11.png" alt="">
-                <img src="assets/img/items-image12.png" alt="">
+                <ul>
+                    <li>
+                        <img src="assets/img/items-image01.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image02.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image03.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image04.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image05.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image06.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image07.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image08.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image09.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image10.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image11.png" alt="">
+                    </li>
+                    <li>
+                        <img src="assets/img/items-image12.png" alt="">
+                    </li>
+                </ul>
             </section>
     </main>
+        
 
     <footer>
+        <P class="copyright">
         <small>COPYRIGHT TAKAOSAN ALL RIGHT RESERVED.</small>
+        </P>
     </footer>
-
+    </div>      
 
 </body>
 </html>
