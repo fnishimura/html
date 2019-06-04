@@ -13,6 +13,13 @@ body{
     color:#454545;
 }
 
+html.hidden,
+body.hidden{
+    overflow:hidden;
+    height:100%;
+}
+
+
 @media(max-width: 768px){
     .wrapper{
         width:100%;
@@ -47,7 +54,7 @@ h1 img{
 
 @media(max-width:768px){
     h1{
-        margin:0 5%;
+        margin:0 3%;
         padding-top:19.5px;
         padding-left: 0;
         padding-bottom:22.5px;
@@ -88,6 +95,8 @@ h1 img{
     text-align: center;
     line-height: 25px;
     color:#454545;
+    transition: all 0.3s;
+
 }
 
 #global-nav ul li a:hover{
@@ -104,7 +113,7 @@ h1 img{
         z-index:1;
     }
     #global-nav{
-        display:none;
+        /* display:none; */
     }
     #global-nav ul{
         display:none;
@@ -113,11 +122,9 @@ h1 img{
         position:fixed;
         top:70px;
         left:0;
-        background-color:#fff;
-        display:block;
+        background-color:rgba(255,255,255,0.95);
         margin: 0 auto;
-
-    }
+        }
 
     #global-nav ul li {
         margin: 0 auto;
@@ -132,8 +139,6 @@ h1 img{
         border-bottom: 1px solid #ccc;
         text-align: center;
         }
-    }
-
 
     #global-nav ul li:last-child{
         border-right:none;
@@ -202,7 +207,7 @@ h1 img{
 
 @media(max-width:768px){
     .news-area{
-        margin:0 5%;
+        margin:0 3%;
         padding-left:25px;
         padding-right:25px;
         padding-bottom:56px;
@@ -280,9 +285,13 @@ h1 img{
     line-height:1.6;
 }
 
+.features-text1{
+    margin-bottom:24px;
+}
+
 @media(max-width:768px){
     .features-area{
-        margin:0 5%;
+        margin:0 3%;
     }
     .features-title{
         margin-bottom:44px;
@@ -380,6 +389,8 @@ h1 img{
 
 .pack-price span{
     font-size:40px;
+    margin-right:8px;
+    margin-left:8px;
 }
 
 .pack-text{
@@ -387,7 +398,15 @@ h1 img{
     padding-bottom: 22px;
 }
 
-.more{
+
+.subscription-pack ul li a figure{
+    transition: all 0.2s;
+}
+.subscription-pack ul li a:hover figure{
+    transform:translate(0,-5px);
+}
+
+.subscription-pack ul li a .more{
     font-size:14px;
     font-weight:bold;
     width:296px;
@@ -395,12 +414,9 @@ h1 img{
     margin:0 24px 24px;
     line-height:50px;
     background-color: #eee;
-
+    
 }
 
-.subscription-pack ul li a:hover figure{
-    transform:translate(0,-5px);
-}
 
 .subscription-pack ul li a:hover .more{
     background:linear-gradient(to right, #c9e23f, #49e3d9);
@@ -408,7 +424,7 @@ h1 img{
 
 @media(max-width:768px){
     .subscription-area{
-        margin:0 5%;
+        margin:0 3%;
     }
 
     .subscription-title{
@@ -454,7 +470,7 @@ h1 img{
         font-size: 40px;
     }
 
-    .more{ 
+    .subscription-pack ul li a .more{ 
         width:313px;
         height:56px;
         line-height:56px;
@@ -497,10 +513,17 @@ h1 img{
     height:180px;
 }
 
+.items-area ul a {
+    transition: 0.3s;
+}
+.items-area ul a:hover {
+    opacity:0.5;
+}
+
 
 @media(max-width:768px){
     .items-area{
-        margin:0 5%;
+        margin:0 3%;
     }
     .items-title{
         margin-bottom:40px;
